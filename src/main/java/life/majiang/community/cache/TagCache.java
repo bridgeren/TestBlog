@@ -14,15 +14,19 @@ import java.util.stream.Collectors;
 public class TagCache {
     public static List<TagDTO> get() {
         List<TagDTO> tagDTOS = new ArrayList<>();
-        TagDTO program = new TagDTO();
-        program.setCategoryName("开发语言");
-        program.setTags(Arrays.asList("javascript", "php", "css", "html", "html5", "java", "node.js", "python", "c++", "c", "golang", "objective-c", "typescript", "shell", "swift", "c#", "sass", "ruby", "bash", "less", "asp.net", "lua", "scala", "coffeescript", "actionscript", "rust", "erlang", "perl"));
-        tagDTOS.add(program);
+
 
         TagDTO framework = new TagDTO();
         framework.setCategoryName("划水灌水");
         framework.setTags(Arrays.asList("电影推荐", "好玩推荐", "好吃推荐", "就是划水", "每日一弹", "作死挑战", "1", "1+1=3", "11", "22"));
         tagDTOS.add(framework);
+
+        TagDTO program = new TagDTO();
+        program.setCategoryName("开发语言");
+        program.setTags(Arrays.asList("javascript", "php", "css", "html", "html5", "java", "node.js", "python", "c++", "c", "golang", "objective-c", "typescript", "shell", "swift", "c#", "sass", "ruby", "bash", "less", "asp.net", "lua", "scala", "coffeescript", "actionscript", "rust", "erlang", "perl"));
+        tagDTOS.add(program);
+
+
 
 
       /*  TagDTO server = new TagDTO();
